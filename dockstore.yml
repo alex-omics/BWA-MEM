@@ -1,0 +1,8 @@
+version: 1.2
+workflows:
+  - subclass: WDL
+    primaryDescriptorPath: /workflows/BWA_MEM.wdl
+    testParameterFiles: []
+    name: illumina-bwamem-align-count
+    publish: true
+    topic: "General-purpose Illumina short-read alignment with BWA-MEM, optional Picard duplicate marking, and optional featureCounts quantification. Suitable for RNA-Seq, DNA-Seq, WGS, amplicon, and ChIP-Seq on Terra/Cromwell."
